@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interest Services Hyderabad - internet, broadband, Wi-Fi and SIM card services.">
+  <title>Interest Services Hyderabad | Internet & SIM Services</title>
+  <style>
+    :root{--navy:#101d3a;--blue:#1769e0;--cyan:#16b8cf;--ink:#17233b;--muted:#63718a;--bg:#f5f8fc;--white:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 3px 18px #10204012}
+    .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--navy);font-size:18px}
+    .logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:white;font-weight:900;font-size:19px}
+    nav{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:700;color:#45536b}
+    nav a:hover{color:var(--blue)}
+    .menu-btn{display:none;border:0;background:#edf3ff;padding:9px 12px;border-radius:9px;font-size:20px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:10px;padding:13px 20px;font-weight:800;background:var(--blue);color:white;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+    .btn.light{background:#fff;color:var(--blue)}
+    .hero{background:radial-gradient(circle at 80% 20%,#2d83ed 0,transparent 30%),linear-gradient(120deg,#101d3a,#123e79 65%,#087eaa);color:white;padding:88px 0 92px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px}
+    .eyebrow{display:inline-block;border:1px solid #ffffff55;background:#ffffff15;padding:7px 13px;border-radius:30px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
+    h1{font-size:clamp(36px,5vw,58px);line-height:1.08;margin:20px 0}
+    .hero p{max-width:570px;color:#e1edff;font-size:17px;margin-bottom:28px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-card{background:#ffffff12;border:1px solid #ffffff38;border-radius:24px;padding:28px;backdrop-filter:blur(8px);box-shadow:0 25px 60px #06142e44}
+    .signal{height:150px;border-radius:18px;background:linear-gradient(135deg,#ffffff22,#ffffff08);display:grid;place-items:center;margin-bottom:20px}
+    .signal svg{width:130px;height:130px}
+    .hero-card h3{font-size:21px;margin-bottom:7px}
+    .hero-card p{font-size:14px;margin:0}
+    .trust{background:white;padding:22px 0}
+    .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;text-align:center}
+    .trust strong{display:block;font-size:17px;color:var(--navy)}
+    .trust span{font-size:13px;color:var(--muted)}
+    section{padding:76px 0}
+    .section-head{text-align:center;max-width:650px;margin:0 auto 38px}
+    .kicker{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue);font-weight:900}
+    h2{font-size:clamp(28px,4vw,38px);line-height:1.2;margin:9px 0 12px;color:var(--navy)}
+    .section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .service{background:white;border:1px solid #e7edf5;border-radius:18px;padding:26px;box-shadow:0 10px 30px #10204008;transition:.2s}
+    .service:hover{transform:translateY(-5px);box-shadow:0 16px 35px #10204013}
+    .service-icon{width:52px;height:52px;border-radius:15px;background:#eaf2ff;color:var(--blue);display:grid;place-items:center;font-size:25px;margin-bottom:18px}
+    .service h3{font-size:19px;margin-bottom:8px}
+    .service p{font-size:14px;color:var(--muted)}
+    .providers{background:#edf4ff}
+    .provider-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .provider{background:white;border-radius:16px;padding:25px;text-align:center;border:1px solid #e2eaf5}
+    .provider-mark{font-size:25px;font-weight:900;letter-spacing:-1px;margin-bottom:8px}
+    .provider:nth-child(1) .provider-mark{color:#0876d8}
+    .provider:nth-child(2) .provider-mark{color:#e32636}
+    .provider:nth-child(3) .provider-mark{color:#16a36a}
+    .provider p{font-size:13px;color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+    .about-art{min-height:310px;border-radius:24px;background:linear-gradient(140deg,#dcecff,#c9f4f3);display:grid;place-items:center;font-size:100px}
+    .about-copy p{color:var(--muted);margin:12px 0}
+    .checks{list-style:none;margin:20px 0}
+    .checks li{margin:9px 0;font-weight:700;font-size:14px}
+    .checks li:before{content:"✓";color:#0caa75;font-weight:900;margin-right:10px}
+    .reviews{background:#fff}
+    .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .review{border:1px solid #e8edf4;border-radius:16px;padding:23px}
+    .stars{color:#f2a900;letter-spacing:2px;margin-bottom:10px}
+    .review p{font-size:14px;color:#536078;margin-bottom:14px}
+    .review strong{font-size:13px}
+    .review small{display:block;color:#8792a5}
+    .contact{background:linear-gradient(120deg,#101d3a,#164b89);color:white}
+    .contact h2{color:white}
+    .contact .section-head p{color:#d2e1f5}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
+    .contact-info,.contact-form{background:#ffffff12;border:1px solid #ffffff2c;border-radius:18px;padding:26px}
+    .contact-info h3,.contact-form h3{font-size:20px;margin-bottom:17px}
+    .info-item{padding:13px 0;border-bottom:1px solid #ffffff25;color:#e2edff;font-size:14px}
+    .info-item:last-child{border:0}
+    .contact-form label{display:block;font-size:13px;font-weight:700;margin:12px 0 5px}
+    .contact-form input,.contact-form textarea{width:100%;padding:12px 13px;border:1px solid #ffffff55;border-radius:9px;background:#fff;color:#17233b;font:inherit}
+    .contact-form textarea{min-height:95px;resize:vertical}
+    .contact-form .btn{margin-top:15px;width:100%;background:#19b985}
+    footer{background:#0b1429;color:#aebbd0;padding:25px 0;font-size:13px}
+    .footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#20c76a;color:white;display:grid;place-items:center;font-size:27px;box-shadow:0 8px 25px #0003;z-index:30}
+    .whatsapp:hover{transform:scale(1.06)}
+    @media(max-width:800px){
+      .menu-btn{display:block}
+      nav{display:none;position:absolute;top:74px;left:0;right:0;background:white;padding:18px 5%;flex-direction:column;align-items:flex-start;box-shadow:0 12px 18px #10204014}
+      nav.open{display:flex}
+      .nav>.btn{display:none}
+      .hero{padding:65px 0}
+      .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .hero-card{max-width:470px}
+      .cards,.provider-grid,.review-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:540px){
+      .cards,.provider-grid,.review-grid,.trust-row{grid-template-columns:1fr}
+      .trust-row{gap:18px}
+      section{padding:58px 0}
+      .hero-actions .btn{width:100%}
+      .brand{font-size:15px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><span class="logo">IS</span><span>INTEREST SERVICES<br><small style="font-size:11px;color:#71809a;font-weight:700">HYDERABAD</small></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#providers">Providers</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#contact">Get Connected</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Your local connectivity partner</span>
+        <h1>Stay Connected.<br>Stay Ahead.</h1>
+        <p>Looking for reliable internet, broadband, Wi-Fi or a new SIM connection? Interest Services Hyderabad helps you explore connection options that fit your home or business.</p>
+        <div class="hero-actions">
+          <a class="btn light" href="#services">Explore Services</a>
+          <a class="btn" style="background:#18b985" href="https://wa.me/919533551509" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="signal">
+          <svg viewBox="0 0 140 140" fill="none" aria-hidden="true">
+            <path d="M18 52C47 24 93 24 122 52" stroke="white" stroke-width="9" stroke-linecap="round"/>
+            <path d="M34 69C54 50 86 50 106 69" stroke="white" stroke-width="9" stroke-linecap="round"/>
+            <path d="M50 87C62 76 78 76 90 87" stroke="white" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="70" cy="108" r="7" fill="white"/>
+          </svg>
+        </div>
+        <h3>Internet made simple</h3>
+        <p>Compare available connection options and get help with the next steps.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="container trust-row">
+      <div><strong>Home & Business</strong><span>Connectivity options</span></div>
+      <div><strong>Multiple Providers</strong><span>More choices in one place</span></div>
+      <div><strong>Local Assistance</strong><span>Friendly connection support</span></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head"><span class="kicker">What we offer</span><h2>Our Services</h2><p>Everyday connectivity services for homes, offices and growing businesses.</p></div>
+      <div class="cards">
+        <article class="service"><div class="service-icon">⌁</div><h3>Broadband Internet</h3><p>Explore broadband plans and connection options for smooth browsing, streaming and everyday work.</p></article>
+        <article class="service"><div class="service-icon">◉</div><h3>Fiber Wi-Fi</h3><p>Get guidance on fiber internet availability and Wi-Fi setup for your home or workplace.</p></article>
+        <article class="service"><div class="service-icon">▣</div><h3>SIM Card Services</h3><p>Get assistance with new SIM connections and available mobile network options.</p></article>
+        <article class="service"><div class="service-icon">⌂</div><h3>Home Connections</h3><p>Find suitable internet options for your household and connected devices.</p></article>
+        <article class="service"><div class="service-icon">▤</div><h3>Office Internet</h3><p>Explore connectivity solutions for offices, shops and small businesses.</p></article>
+        <article class="service"><div class="service-icon">♧</div><h3>Plan Assistance</h3><p>Get help understanding plan options, coverage and the connection process.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="providers" id="providers">
+    <div class="container">
+      <div class="section-head"><span class="kicker">Connection choices</span><h2>Popular Network Providers</h2><p>Ask us about availability and plans from these providers in your area.</p></div>
+      <div class="provider-grid">
+        <div class="provider"><div class="provider-mark">Jio</div><p>Fiber and mobile connection options</p></div>
+        <div class="provider"><div class="provider-mark">airtel</div><p>Broadband, fiber and mobile options</p></div>
+        <div class="provider"><div class="provider-mark">ACT</div><p>Home and business broadband options</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-art" aria-label="Wi-Fi connectivity illustration">📶</div>
+      <div class="about-copy">
+        <span class="kicker">About our business</span><h2>Connecting Hyderabad, one customer at a time.</h2>
+        <p>Interest Services Hyderabad helps customers explore internet and SIM services with clear information and local assistance.</p>
+        <p>Whether you need a home Wi-Fi connection or internet for your business, contact us to discuss available options in your location.</p>
+        <ul class="checks"><li>Home and office connectivity guidance</li><li>Multiple provider options</li><li>Friendly local assistance</li></ul>
+        <a class="btn" href="#contact">Talk to Our Team</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-head"><span class="kicker">Customer experience</span><h2>What Customers Look For</h2><p>We aim to make choosing a connection straightforward and convenient.</p></div>
+      <div class="review-grid">
+        <article class="review"><div class="stars">★★★★★</div><p>“Helpful guidance when comparing internet connection options for our home.”</p><strong>Home customer</strong><small>Customer feedback example</small></article>
+        <article class="review"><div class="stars">★★★★★</div><p>“The team explained the available plans and the next steps clearly.”</p><strong>Local customer</strong><small>Customer feedback example</small></article>
+        <article class="review"><div class="stars">★★★★★</div><p>“A convenient place to ask about broadband and SIM connection services.”</p><strong>Business customer</strong><small>Customer feedback example</small></article>
+      </div>
+      <p style="text-align:center;color:#7b8799;font-size:12px;margin-top:18px">Note: These are sample testimonials. Replace them with genuine customer reviews before publishing.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head"><span class="kicker" style="color:#8edcff">Get in touch</span><h2>Let's Find Your Connection</h2><p>Send us your details and the service you are looking for.</p></div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="info-item">📍 <strong>Location:</strong> Hyderabad, Telangana</div>
+          <div class="info-item">📞 <strong>Phone:</strong> <a href="tel:+919533551509">95335 51509</a></div>
+          <div class="info-item">💬 <strong>WhatsApp:</strong> <a href="https://wa.me/919533551509" target="_blank" rel="noopener">Message us</a></div>
+          <div class="info-item">🌐 <strong>Services:</strong> Internet, Wi-Fi, Broadband & SIM</div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Request a Callback</h3>
+          <label for="name">Your Name</label><input id="name" name="name" placeholder="Enter your name" required>
+          <label for="phone">Mobile Number</label><input id="phone" name="phone" type="tel" inputmode="numeric" pattern="[0-9+\s-]{10,15}" placeholder="Enter your mobile number" required>
+          <label for="service">Service Required</label>
+          <select id="service" name="service" style="width:100%;padding:12px;border-radius:9px;border:1px solid #fff;font:inherit">
+            <option>Broadband / Fiber Internet</option><option>Wi-Fi Connection</option><option>SIM Card</option><option>Office Internet</option><option>Other</option>
+          </select>
+          <label for="message">Message</label><textarea id="message" name="message" placeholder="Your area and requirements"></textarea>
+          <button class="btn" type="submit">Send Request on WhatsApp</button>
+          <p style="font-size:11px;color:#d5e4f8;margin-top:9px">Your request will open in WhatsApp for you to send.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container footer-row"><span>© <span id="year"></span> Interest Services Hyderabad. All rights reserved.</span><span>Internet • Broadband • Wi-Fi • SIM Services</span></div></footer>
+<a class="whatsapp" href="https://wa.me/919533551509" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">☏</a>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value.trim();
+    const text = `Hello Interest Services Hyderabad,%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service)}%0AMessage: ${encodeURIComponent(message)}`;
+    window.open(`https://wa.me/919533551509?text=${text}`, '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
